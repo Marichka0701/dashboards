@@ -106,7 +106,7 @@ export const Sidebar: React.FC<Props> = ({ open, setOpen }) => {
 
           <button
             onClick={toggleDrawer}
-            className="bg-primary-light size-11 rounded-full flex justify-center items-center shadow-xl"
+            className="bg-primary-light size-11 rounded-full flex justify-center items-center shadow-xl cursor-pointer"
           >
             <PiCaretDoubleLeftBold size={18} />
           </button>
