@@ -1,4 +1,4 @@
-import { FC, useState, useState } from "react";
+import { FC, useState } from "react";
 import { IconType } from "react-icons";
 import { FaBolt, FaRegSnowflake } from "react-icons/fa";
 import { GiReactor } from "react-icons/gi";
@@ -71,7 +71,10 @@ export const DashboardPage: FC = () => {
       </div>
 
       <div className="w-full xl:w-2/5">
-        <ProcessesList steps={processSteps} onStepClick={setActiveStep} />
+        <ProcessesList
+          steps={processSteps}
+          onStepClick={setActiveStep}
+        />
       </div>
     </div>
   );

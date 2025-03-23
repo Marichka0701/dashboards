@@ -37,7 +37,7 @@ export const ProductStatsIndicators: FC<Props> = ({ step }) => {
           </div>
         </div>
 
-        <video className="w-full h-auto" controls>
+        <video className="w-full h-auto rounded-xl overflow-hidden" controls>
           <source src="/process-video.mp4" type="video/mp4" />
         </video>
       </div>
