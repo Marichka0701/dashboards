@@ -1,28 +1,33 @@
 import { FC } from "react";
+import { IconType } from "react-icons";
 import { FaArrowRight } from "react-icons/fa6";
 
-const ProcessCard: FC = () => {
+interface Props {
+  title: string;
+  Icon: IconType;
+  iconClassname?: string;
+  code: string;
+  description: string;
+}
+
+export const ProcessCard: FC<Props> = ({ title, Icon, iconClassname, code, description }) => {
   return (
     <div className="bg-white p-4 shadow-xl rounded-xl">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between flex-wrap gap-y-2 gap-x-4">
         <div className="flex items-center gap-2.5">
-          icon
-          <p className="text-black text-xl">Substrate Preparation</p>
+          <Icon className={iconClassname} />
+          <p className="text-primary-dark text-xl">{title}</p>
         </div>
 
         <div className="flex items-center gap-4">
-          <span>01 - 122</span>
-          <FaArrowRight className="text-black" />
+          <span>{code}</span>
+          <FaArrowRight className="text-primary-dark" />
         </div>
       </div>
 
       <div className="my-3 w-full h-[1px] bg-black" />
 
-      <p className="text-black text-lg">
-        Select and cut a copper or nickel substrate for graphene growth.
-      </p>
+      <p className="text-primary-dark text-lg">{description}</p>
     </div>
   );
 };
-
-export default ProcessCard;

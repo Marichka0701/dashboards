@@ -1,9 +1,17 @@
-import ProcessCard from "../../components/ProcessCard/ProcessCard";
+import { FC } from "react";
+import { ProcessesList } from "../../components/ProcessesList/ProcessesList";
+import { ProductStatsIndicators } from "../../components/ProductStatsIndicators/ProductStatsIndicators";
 
-export default function DashboardPage() {
+export const DashboardPage: FC = () => {
   return (
-    <div>
-      <ProcessCard />
+    <div className="p-4 sm:p-8 flex flex-1 flex-col xl:flex-row gap-8">
+      <div className="w-full xl:w-3/5">
+        <ProductStatsIndicators />
+      </div>
+
+      <div className="w-full xl:w-2/5">
+        <ProcessesList />
+      </div>
     </div>
   );
-}
+};
