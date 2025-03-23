@@ -8,9 +8,17 @@ interface Props {
   iconClassname?: string;
   code: string;
   description: string;
+  onStepClick: () => void;
 }
 
-export const ProcessCard: FC<Props> = ({ title, Icon, iconClassname, code, description }) => {
+export const ProcessCard: FC<Props> = ({
+  title,
+  Icon,
+  iconClassname,
+  code,
+  description,
+  onStepClick,
+}) => {
   return (
     <div className="bg-white p-4 shadow-xl rounded-xl">
       <div className="flex items-center justify-between flex-wrap gap-y-2 gap-x-4">
@@ -21,7 +29,9 @@ export const ProcessCard: FC<Props> = ({ title, Icon, iconClassname, code, descr
 
         <div className="flex items-center gap-4">
           <span>{code}</span>
-          <FaArrowRight className="text-primary-dark" />
+          <button onClick={onStepClick} className="cursor-pointer">
+            <FaArrowRight className="text-primary-dark" />
+          </button>
         </div>
       </div>
 

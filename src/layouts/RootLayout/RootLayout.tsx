@@ -13,7 +13,7 @@ export const RootLayout = () => {
   }, [size.width]);
 
   return (
-    <div className="flex">
+    <div className="flex min-h-screen">
       <CssBaseline />
       <Sidebar
         open={open}

@@ -3,7 +3,7 @@ import { CircularProgressBar } from "../CircularProgressBar/CircularProgressBar"
 
 export const CircularProgressBars: FC = () => {
   return (
-    <div className="my-6 sm:mt-0 flex flex-col gap-12 sm:grid sm:grid-cols-2 lg:flex lg:flex-row md:gap-4 2xl:gap-8">
+    <div className="my-6 sm:mt-0 flex flex-col gap-12 sm:grid sm:grid-cols-2 lg:flex lg:flex-row justify-between md:gap-4 2xl:gap-8">
       <div className="scale-125 sm:scale-100">
         <CircularProgressBar
           currentPoints={78}
