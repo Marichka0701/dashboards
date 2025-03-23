@@ -4,7 +4,7 @@ import { ProductStatsIndicators } from "../../components/ProductStatsIndicators/
 
 export const DashboardPage: FC = () => {
   return (
-    <div className="p-4 sm:p-8 flex flex-1 flex-col xl:flex-row gap-8">
+    <div className="bg-primary-light p-4 sm:p-8 flex flex-1 flex-col xl:flex-row gap-8">
       <div className="w-full xl:w-3/5">
         <ProductStatsIndicators />
       </div>

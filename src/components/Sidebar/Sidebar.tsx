@@ -58,7 +58,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== "open" 
         ...openedMixin(theme),
         padding: "24px 16px",
         height: "100vh",
-        backgroundColor: "#FFF",
+        backgroundColor: "#F8F8F8",
         display: "flex",
         flexDirection: "column",
         gap: 48,
@@ -70,7 +70,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== "open" 
         ...closedMixin(theme),
         padding: "24px 0",
         height: "100vh",
-        backgroundColor: "#FFF",
+        backgroundColor: "#F8F8F8",
         display: "flex",
         flexDirection: "column",
         gap: 48,
@@ -106,7 +106,7 @@ export const Sidebar: React.FC<Props> = ({ open, setOpen }) => {
 
           <button
             onClick={toggleDrawer}
-            className="bg-white size-11 rounded-full flex justify-center items-center shadow-xl"
+            className="bg-primary-light size-11 rounded-full flex justify-center items-center shadow-xl"
           >
             <PiCaretDoubleLeftBold size={18} />
           </button>
